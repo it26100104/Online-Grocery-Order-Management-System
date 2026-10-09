@@ -1,2 +1,3 @@
 userId|name|email|password|phone|address|role|status
 U001|Kamal|kamal@gmail.com|1234|0712345678|Galle|CUSTOMER|ACTIVE
+U002|Nimal|nimal@gmail.com|1234|0711111111|Colombo|CUSTOMER|INACTIVE
