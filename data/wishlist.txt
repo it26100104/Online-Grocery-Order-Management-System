@@ -1,0 +1,3 @@
+U001|P300|Coconut Oil 1L|950.0
+U001|P301|Tea Leaves 500g|780.0
+U002|P302|Sugar 1kg|260.0

@@ -1,0 +1,5 @@
+U001|P101|Basmati Rice 1kg|450.0|2
+U001|P205|Milk Packet|180.0|3
+U001|P310|Red Onion 1kg|320.0|1
+U002|P101|Basmati Rice 1kg|450.0|1
+U002|P412|Dhal 1kg|290.0|2
