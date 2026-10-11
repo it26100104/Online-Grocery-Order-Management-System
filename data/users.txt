@@ -1,0 +1,3 @@
+U001|ADMIN|System Administrator|admin@grocery.com|+94 77 123 4567|Main HQ, Colombo|b12270bb3f31cd309ca07d7cfb5413ff7ea7c89fca6d31fbe61d68a2bf6cb99a|ACTIVE
+U002|CUSTOMER|John Doe|john@grocery.com|+94 71 987 6543|No 45, Flower Road, Colombo|03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4|ACTIVE
+U003|CUSTOMER|Sarah Smith|sarah@grocery.com|+94 76 555 4321|No 12, Kandy Road, Kiribathgoda|03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4|ACTIVE

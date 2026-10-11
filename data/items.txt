@@ -1,0 +1,6 @@
+P001|Fresh Organic Milk (1L)|Dairy|350.00|50|Full cream pasteurized fresh cow milk|PERISHABLE|2026-10-25
+P002|Red Apples (1kg)|Fruits|780.00|40|Crisp imported Washington red apples|PERISHABLE|2026-11-05
+P003|Basmati Rice (5kg)|Grains|2450.00|30|Premium aged long-grain aromatic rice|NON_PERISHABLE|24
+P004|Ceylon Black Tea (400g)|Beverages|620.00|60|Pure Ceylon BOPF loose leaf black tea|NON_PERISHABLE|36
+P005|Farm Fresh Eggs (Pack of 10)|Poultry|450.00|80|Graded fresh brown farm eggs|PERISHABLE|2026-10-30
+P006|Extra Virgin Olive Oil (500ml)|Cooking Oil|1850.00|25|Cold-pressed Mediterranean pure olive oil|NON_PERISHABLE|18

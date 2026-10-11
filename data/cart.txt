@@ -1,0 +1,2 @@
+C001|U002|P001|Fresh Organic Milk (1L)|350.00|2
+C002|U002|P003|Basmati Rice (5kg)|2450.00|1

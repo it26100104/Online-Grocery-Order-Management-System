@@ -1,0 +1,5 @@
+LOG001|2026-10-10 09:00:00|SYSTEM|SYSTEM_INIT|Initial system startup and data files verification
+LOG002|2026-10-10 09:05:00|SYSTEM|SEED_ADMIN|Admin account verified: admin@grocery.com
+LOG003|2026-10-10 14:30:00|U002|ORDER_PLACED|Order O001 placed for amount Rs. 1425.60
+LOG004|2026-10-10 14:32:00|U002|PAYMENT_SUCCESS|Payment PAY001 recorded via CARD for Order O001
+LOG005|2026-10-10 17:00:00|SYSTEM|DELIVERY_COMPLETED|Delivery D001 completed for Order O001
