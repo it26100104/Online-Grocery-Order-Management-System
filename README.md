@@ -17,9 +17,9 @@ Member 4 handles order placement, receipt generation, and lifecycle state manage
 ---
 
 ## 2. Object-Oriented Programming (OOP) Implementation
-- **Abstraction:** bstract class Order encapsulates order attributes (orderId, userId, orderType, items, subtotal, 	ax, 	otal, deliveryAddress, status, orderDate) and declares:
-  - bstract double calculateTotal()
-  - bstract String getOrderTypeLabel()
+- **Abstraction:** Abstract class Order encapsulates order attributes (orderId, userId, orderType, items, subtotal, 	ax, 	otal, deliveryAddress, status, orderDate) and declares:
+  - Abstract double calculateTotal()
+  - Abstract String getOrderTypeLabel()
 - **Inheritance:**
   - RegularOrder extends Order: Standard retail order pricing (subtotal + tax).
   - BulkOrder extends Order: Wholesale bulk order providing a 10% volume discount on orders exceeding $100.
@@ -58,27 +58,4 @@ orderId|userId|orderType|items|subtotal|tax|total|address|status|date
 
 ---
 
-## 6. How to Push Your Work to Git
-When you are ready to submit your module:
-1. Open terminal in the project directory.
-2. Create and switch to your feature branch:
-   `ash
-   git checkout -b feature/member-4-orders
-   `
-3. Copy your files into the main project.
-4. Stage and commit your files:
-   `ash
-   git add src/main/java/com/grocery/model/Order.java
-   git add src/main/java/com/grocery/model/OrderItem.java
-   git add src/main/java/com/grocery/model/RegularOrder.java
-   git add src/main/java/com/grocery/model/BulkOrder.java
-   git add src/main/java/com/grocery/dao/OrderDAO.java
-   git add src/main/java/com/grocery/servlet/order/
-   git add src/main/webapp/WEB-INF/views/order/
-   git commit -m "feat(order): implement Member 4 order processing and lifecycle"
-   `
-5. Push to remote:
-   `ash
-   git push -u origin feature/member-4-orders
-   `
-6. Open a Pull Request from eature/member-4-orders into main.
+
