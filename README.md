@@ -48,14 +48,6 @@ ame, price, qty) preserved at checkout time even if catalog prices change later.
 
 ---
 
-## 5. Data File Format (orders.txt)
-`
-orderId|userId|orderType|items|subtotal|tax|total|address|status|date
-`
-- items format: productId:name:price:qty;productId:name:price:qty
-- Example:
-  O001|U002|REGULAR|P001:Organic Whole Milk:3.50:2;P002:Brown Eggs Dozen:4.20:1|11.20|0.90|12.10|123 Maple Street|PENDING|2026-10-11 18:30
 
----
 
 
