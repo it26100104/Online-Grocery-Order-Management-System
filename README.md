@@ -32,12 +32,12 @@ ame, price, qty) preserved at checkout time even if catalog prices change later.
 ## 3. CRUD Operations
 | Operation | Servlet & URL | HTTP Method | Description |
 |-----------|---------------|-------------|-------------|
-| **Create** | OrderServlet (/orders) | POST (ction=place) | Converts cart items into a confirmed order, deducts inventory, empties cart. |
+| **Create** | OrderServlet (/orders) | POST (Action=place) | Converts cart items into a confirmed order, deducts inventory, empties cart. |
 | **Read** | OrderServlet (/orders) | GET | Displays customer's personal order history. |
 | **Read** | OrderReceiptServlet (/order/receipt) | GET | Printable itemized receipt with tax breakdown and dispatch status. |
 | **Read** | AdminOrderServlet (/admin/orders) | GET | Admin view of all orders across the system. |
-| **Update** | AdminOrderServlet (/admin/orders) | POST (ction=updateStatus) | Advances order status through legal state transitions. |
-| **Delete** | OrderServlet (/orders) | POST (ction=cancel) | Cancels order (if still PENDING) and restores stock back to catalog. |
+| **Update** | AdminOrderServlet (/admin/orders) | POST (Action=updateStatus) | Advances order status through legal state transitions. |
+| **Delete** | OrderServlet (/orders) | POST (Action=cancel) | Cancels order (if still PENDING) and restores stock back to catalog. |
 
 ---
 
