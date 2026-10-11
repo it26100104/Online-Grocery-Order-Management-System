@@ -37,3 +37,68 @@ a {
 a:hover {
     background-color: #1b5e20;
 }
+
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.login-container input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-container button {
+    padding: 12px;
+    background: #176b45;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #105235;
+}
+
+.login-container a {
+    color: #176b45;
+}
+.login-container p a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #176b45;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.login-container > a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #176b45;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.login-container p {
+    line-height: 1.6;
+}
