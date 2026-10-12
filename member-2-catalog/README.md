@@ -1,6 +1,6 @@
 # Member 2 - Product & Catalog Management
 
-**Branch Name:** `feature/member-2-catalog`  
+**Branch Name:** `Member_02_Product_&_Catalog_Management`  
 **Data File Owned:** `items.txt` (stored in `<user.home>/GroceryData/items.txt`)
 
 ---
