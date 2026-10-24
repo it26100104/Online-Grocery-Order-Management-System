@@ -5,37 +5,6 @@
 **Tech Stack:** Java 17, Jakarta Servlets, JSP, JSTL, Pure CSS, Flat-File Storage  
 
 ---
-
-## ⚡ Super Easy 1-Click Launch (No Tomcat Setup Required!)
-
-You do **NOT** need to configure Tomcat servers, plugins, or artifacts in IntelliJ. We have embedded Tomcat directly into the project!
-
-### Option A: From IntelliJ IDEA (Easiest)
-1. Open this project in **IntelliJ IDEA**.
-2. Open [`src/main/java/com/grocery/Main.java`](src/main/java/com/grocery/Main.java).
-3. Click the green **Run (▶)** button next to `main`.
-4. Open your browser at:
-   ```
-   http://localhost:8080/
-   ```
-
-### Option B: From Windows Explorer (Double Click)
-- Simply double-click **`run.bat`** in this folder!
-
-### Option C: From Terminal / Command Prompt
-```bash
-mvn clean compile exec:java
-```
-
-### Option D: Traditional WAR Submission for University
-When submitting your project to your lecturer, you can still build a standard `.war` file:
-```bash
-mvn clean package
-```
-The file will be generated at `target/grocery-app.war` and can be deployed to any standard Apache Tomcat 10.1 server.
-
----
-
 ## 🔑 Default Accounts (Pre-Seeded)
 
 On the first run, all data files are created automatically in `<user.home>/GroceryData` with these ready-to-test accounts:
