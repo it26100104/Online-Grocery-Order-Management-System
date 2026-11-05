@@ -5,10 +5,8 @@ package com.grocery.model;
  * Format: deliveryId|orderId|userId|type|address|agent|status|date|fee
  * type = STANDARD or EXPRESS, status = SCHEDULED, DISPATCHED, OUT_FOR_DELIVERY, DELIVERED, CANCELLED
  */
-// ABSTRACTION: Blueprint for logistics dispatch options
 public abstract class Delivery {
 
-    // ENCAPSULATION: Private attributes
     private String deliveryId;
     private String orderId;
     private String userId;
@@ -35,7 +33,6 @@ public abstract class Delivery {
         this.fee = Math.max(0.0, fee);
     }
 
-    // POLYMORPHISM: Abstract shipping fee and delivery SLA methods
     public abstract double calculateFee();
 
     public abstract String getEstimatedDelivery();
