@@ -6,7 +6,6 @@ import java.time.format.DateTimeFormatter;
 /**
  * Abstract Report template for business intelligence and operations audit.
  */
-// ABSTRACTION: Common contract for analytics reporting
 public abstract class Report {
 
     private String reportTitle;
@@ -25,6 +24,5 @@ public abstract class Report {
         return generatedAt;
     }
 
-    // POLYMORPHISM: Abstract report generation contract
     public abstract String generateReport();
 }
