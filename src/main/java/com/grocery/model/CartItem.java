@@ -4,7 +4,7 @@ package com.grocery.model;
  * Concrete CartItem representing an item in the user's shopping basket.
  * File format: cartItemId|userId|productId|productName|unitPrice|quantity
  */
-// INHERITANCE: Inherits from ListItem
+
 public class CartItem extends ListItem {
 
     private int quantity;
