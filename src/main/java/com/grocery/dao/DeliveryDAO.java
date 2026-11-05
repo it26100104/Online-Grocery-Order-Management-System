@@ -56,7 +56,7 @@ public class DeliveryDAO {
             String date = tokens[7].trim();
             double fee = Double.parseDouble(tokens[8].trim());
 
-            // POLYMORPHISM: Factory creation of concrete Delivery subclass
+        
             if ("EXPRESS".equalsIgnoreCase(type)) {
                 return new ExpressDelivery(deliveryId, orderId, userId, address, agent, status, date, fee);
             } else {
