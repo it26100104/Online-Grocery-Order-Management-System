@@ -1,0 +1,28 @@
+# Maven build output
+target/
+*.war
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log and temp files
+*.log
+*.tmp
+
+# Waste & Temp runtime directories
+waste/
+tomcat.*/
+
+
