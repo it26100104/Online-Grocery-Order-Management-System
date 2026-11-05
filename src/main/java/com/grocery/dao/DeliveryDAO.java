@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
  * Format: deliveryId|orderId|userId|type|address|agent|status|date|fee
  * Inter-module: when DELIVERED, calls OrderDAO.updateStatus(orderId, DELIVERED)
  */
-// ENCAPSULATION: Centralizes logistics dispatch state and analytics aggregation
+
 public class DeliveryDAO {
 
     private static final String FILE_NAME = "deliveries.txt";
