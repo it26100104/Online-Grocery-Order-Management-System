@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * Sales Analytics Report calculating Total Revenue and Top Selling items.
  */
-// INHERITANCE: Inherits from Report
+
 public class SalesReport extends Report {
 
     private double totalRevenue;
@@ -31,7 +31,6 @@ public class SalesReport extends Report {
         return topSellingItems;
     }
 
-    // POLYMORPHISM: Formats executive summary of gross revenue and item rankings
     @Override
     public String generateReport() {
         StringBuilder sb = new StringBuilder();
