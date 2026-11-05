@@ -3,7 +3,7 @@ package com.grocery.model;
 /**
  * Abstract base class for list items (CartItem and WishlistItem).
  */
-// ABSTRACTION: Common contract for shopping list entries
+
 public abstract class ListItem {
 
     
