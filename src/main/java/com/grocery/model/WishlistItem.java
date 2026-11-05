@@ -4,7 +4,7 @@ package com.grocery.model;
  * Concrete WishlistItem representing a saved product for later purchase.
  * File format: wishId|userId|productId|productName|unitPrice
  */
-// INHERITANCE: Inherits from ListItem
+
 public class WishlistItem extends ListItem {
 
     public WishlistItem() {
