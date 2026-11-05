@@ -3,7 +3,7 @@ package com.grocery.model;
 /**
  * Priority Express refrigerated courier for fast, perishables-first delivery.
  */
-// INHERITANCE: Inherits from Delivery
+
 public class ExpressDelivery extends Delivery {
 
     public ExpressDelivery() {
@@ -16,13 +16,12 @@ public class ExpressDelivery extends Delivery {
         super(deliveryId, orderId, userId, "EXPRESS", address, agent, status, date, fee);
     }
 
-    // POLYMORPHISM: Express priority dispatch rate (Rs. 500.00)
     @Override
     public double calculateFee() {
         return 500.00;
     }
 
-    // POLYMORPHISM: Fast 4-hour SLA
+    
     @Override
     public String getEstimatedDelivery() {
         return "Same-Day Priority Express (Within 4 Hours)";
