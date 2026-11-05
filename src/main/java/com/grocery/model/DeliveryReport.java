@@ -3,7 +3,7 @@ package com.grocery.model;
 /**
  * Logistics Report measuring delivery fulfillment ratios and active dispatches.
  */
-// INHERITANCE: Inherits from Report
+
 public class DeliveryReport extends Report {
 
     private int totalDeliveries;
@@ -35,7 +35,7 @@ public class DeliveryReport extends Report {
         return cancelledCount;
     }
 
-    // POLYMORPHISM: Formats operations summary
+  
     @Override
     public String generateReport() {
         double successRate = totalDeliveries > 0 ? ((double) deliveredCount / totalDeliveries) * 100.0 : 0.0;
