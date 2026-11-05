@@ -15,7 +15,7 @@ import java.util.List;
  * Interacts with cart.txt and wishlist.txt using FileHandler.
  * Checks stock through ProductDAO before adding items.
  */
-// ENCAPSULATION: Centralizes persistence for cart and wishlist operations
+
 public class CartDAO {
 
     public static final double TAX_RATE = 0.08; // 8% sales tax constant
