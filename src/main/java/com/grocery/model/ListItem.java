@@ -6,7 +6,7 @@ package com.grocery.model;
 // ABSTRACTION: Common contract for shopping list entries
 public abstract class ListItem {
 
-    // ENCAPSULATION: Private attributes with getters and setters
+    
     private String itemId;
     private String userId;
     private String productId;
