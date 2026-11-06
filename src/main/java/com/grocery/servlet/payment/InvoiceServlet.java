@@ -1,8 +1,10 @@
-package com.grocery.servlet.order;
+package com.grocery.servlet.payment;
 
 import com.grocery.dao.OrderDAO;
+import com.grocery.dao.PaymentDAO;
 import com.grocery.dao.UserDAO;
 import com.grocery.model.Order;
+import com.grocery.model.Payment;
 import com.grocery.model.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -14,11 +16,12 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Controller for viewing official order receipts and invoices.
+ * Controller for viewing official payment invoices.
  */
-@WebServlet("/order-receipt")
-public class OrderReceiptServlet extends HttpServlet {
+@WebServlet("/invoice")
+public class InvoiceServlet extends HttpServlet {
 
+    private final PaymentDAO paymentDAO = new PaymentDAO();
     private final OrderDAO orderDAO = new OrderDAO();
     private final UserDAO userDAO = new UserDAO();
 
@@ -35,30 +38,33 @@ public class OrderReceiptServlet extends HttpServlet {
             return;
         }
 
-        String orderId = req.getParameter("id");
-        if (orderId == null || orderId.trim().isEmpty()) {
+        String paymentId = req.getParameter("paymentId");
+        if (paymentId == null) {
             res.sendRedirect(req.getContextPath() + "/orders");
             return;
         }
 
-        Order order = orderDAO.getOrderById(orderId.trim());
-        if (order == null) {
-            req.getSession(true).setAttribute("flashMessage", "Order not found.");
+        Payment payment = paymentDAO.getTransactionById(paymentId);
+        if (payment == null) {
+            req.getSession(true).setAttribute("flashMessage", "Invoice transaction not found.");
             req.getSession().setAttribute("flashType", "error");
             res.sendRedirect(req.getContextPath() + "/orders");
             return;
         }
 
-        // Privacy guard: customer can only view their own receipts
-        if (!"ADMIN".equalsIgnoreCase(role) && !order.getUserId().equalsIgnoreCase(userId)) {
+        // Privacy check
+        if (!"ADMIN".equalsIgnoreCase(role) && !payment.getUserId().equalsIgnoreCase(userId)) {
             res.sendRedirect(req.getContextPath() + "/orders");
             return;
         }
 
-        User customer = userDAO.getUserById(order.getUserId());
+        Order order = orderDAO.getOrderById(payment.getOrderId());
+        User customer = userDAO.getUserById(payment.getUserId());
 
+        req.setAttribute("payment", payment);
         req.setAttribute("order", order);
         req.setAttribute("customer", customer);
-        req.getRequestDispatcher("/WEB-INF/views/order/order-receipt.jsp").forward(req, res);
+
+        req.getRequestDispatcher("/WEB-INF/views/payment/invoice.jsp").forward(req, res);
     }
 }
